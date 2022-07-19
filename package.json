@@ -1,0 +1,32 @@
+{
+  "name": "nakedpages-builder-",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "pm2 start app.js --name 'nkp' --instances 1",
+    "config": "node cli-app/cli.js",
+    "logs": "pm2 logs nkp",
+    "restart": "pm2 restart nkp",
+    "debug": "node app.js"
+  },
+  "dependencies": {
+    "acme-http-01-standalone": "^3.0.5",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^9.0.2",
+    "express": "~4.16.1",
+    "express-validator": "^6.11.1",
+    "greenlock": "^4.0.4",
+    "http-errors": "^1.8.0",
+    "inquirer": "^8.2.4",
+    "is-valid-domain": "0.0.19",
+    "less-middleware": "^3.1.0",
+    "mongoose": "^5.13.2",
+    "morgan": "~1.9.1",
+    "mstring": "^0.1.2",
+    "pm2": "^4.5.6",
+    "string-template": "^1.0.0",
+    "superagent": "^6.1.0"
+  }
+}
